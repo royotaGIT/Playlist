@@ -1,20 +1,8 @@
 import java.util.*;
 public class Playlist{
     public ArrayList<Song> playlist = new ArrayList<Song>();
+    public void addSong(Song song){playlist.add(song);}
     public static void main(String[] args){
-    /**
-     * Fields-- This will likely just need to be the ArrayList of Songs. Reference our previous problems
-     * (CarDealership, Zoo) for structure on how this will look
-     */
-
-
-
-
-     /**
-      * Constructor-- this doesn't need any parameters. You should just initialize the ArrayList and
-      * then use additional methods to add Songs in one-by-one
-      */
-
 
       
 
