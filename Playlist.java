@@ -1,6 +1,11 @@
 import java.util.*;
 public class Playlist{
     public ArrayList<Song> playlist = new ArrayList<Song>();
+    public void getPlaylist(){
+        for(Song x:playlist){
+            if(x.isLiked()){System.out.println("❤️");}else{System.out.println("-");}
+        }
+    }
     public void addSong(Song song){playlist.add(song);}
     public void likeSong(int i){
         if(i>=0 && i<playlist.size()){
@@ -8,7 +13,7 @@ public class Playlist{
         song.like();
         }else{System.out.println("No song with that index!");}
     }
-    public static void main(String[] args){
+
 
       
 
@@ -22,5 +27,5 @@ public class Playlist{
        * Determining the total duration of all songs
        * Removing all unliked songs from the playlist (careful with this one!)
        */
-    }
+    
 }
