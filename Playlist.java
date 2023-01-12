@@ -2,6 +2,12 @@ import java.util.*;
 public class Playlist{
     public ArrayList<Song> playlist = new ArrayList<Song>();
     public void addSong(Song song){playlist.add(song);}
+    public void likeSong(int i){
+        if(i>=0 && i<playlist.size()){
+        Song song = playlist.get(i);
+        song.like();
+        }else{System.out.println("No song with that index!");}
+    }
     public static void main(String[] args){
 
       
