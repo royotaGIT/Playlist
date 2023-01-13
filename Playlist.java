@@ -3,7 +3,8 @@ public class Playlist{
     public ArrayList<Song> playlist = new ArrayList<Song>();
     public void getPlaylist(){
         for(Song x:playlist){
-            if(x.isLiked()){System.out.println("❤️");}else{System.out.println("-");}
+            if(x.isLiked()){System.out.print("❤️ ");}else{System.out.print("- ");}
+            System.out.println("\"" + x.getTitle() + "\" by " + x.getArtist() + " " + "(" + x.getDuration() + ")");
         }
     }
     public void addSong(Song song){playlist.add(song);}
