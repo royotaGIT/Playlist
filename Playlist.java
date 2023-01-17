@@ -22,11 +22,4 @@ public class Playlist{
             int min = Integer.parseInt(wordNum.substring(0,1));
             int sec = Integer.parseInt(wordNum.substring(2));
             count = count + sec + min*60; }
-        String finalMin = Integer.toString(count/60);
-        String finalSec;
-        int sec = count%60;
-        if(sec<10){finalSec  = "0" + Integer.toString(sec);}else{finalSec = Integer.toString(sec);}
-        String finalTime = finalMin + ":" + finalSec;
-        return finalTime;}
-    public void removeLiked(){
-        for(int i=0;i<playlist.size();i++){if(playlist.get(i).isLiked()){playlist.remove(i);i--;}}}}
+
